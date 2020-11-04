@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEAN STACK REST API</title>
+</head>
+<body ng-controller="MainController as vm">
+    <h1>MEAN STACK API user update page</h1>
+    <p>Update a user:</p>
+    <div>
+        <form name="updateUserForm" ng-submit="updateUser()">
+            <div class="form-row">
+                <p>* fields are indicate as required.</p>
+            </div>
+            <div class="form-row">
+                <label for="userid">Userid *:</label>
+                <input ng-model="user.id" type="text" id="userid" name="userid" placeholder="userid" required/>
+            </div>
+            <div class="form-row">
+                <label for="username">Username *:</label>
+                <input ng-model="user.username" type="text" id="username" name="username" placeholder="username" required/>
+            </div>
+            <div class="form-row">
+                <label for="password">Password *:</label>
+                <input ng-model="user.password" type="password" id="password" name="password" placeholder="password" required/>
+            </div>
+            <div class="form-row">
+                <label for="email">Email *:</label>
+                <input ng-model="user.email" type="email" id="email" name="email" placeholder="email" required/>
+            </div>
+            <div class="form-row">
+                <label for="firstName">First Name *:</label>
+                <input ng-model="user.firstName" type="text" id="firstName" name="firstName" placeholder="First Name" required/>
+            </div>
+            <div class="form-row">
+                <label for="lastName">Last Name *:</label>
+                <input ng-model="user.lastName" type="text" id="lastName" name="lastName" placeholder="Last Name" required/>
+            </div>
+            <div class="form-row">
+                <input id="add-user-btn" type="submit" name="submit" value="Submit">
+            </div>
+            <div class="form-row output">
+                <p>form data: {{ user }}</p>
+                <p>http status code: {{ status }}</p>
+                <p>http response data: {{ data }}</p>
+            </div>
+        </form>
+    </div>
+
+    <script src="/lib/angular.js"></script>
+    <script src="/assets/javascripts/app.js"></script>
+    <script src="/assets/javascripts/user.js"></script>
+</body>
+</html>

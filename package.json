@@ -1,0 +1,26 @@
+{
+  "name": "mean-stack-api",
+  "version": "1.0.0",
+  "description": "MEAN STACK API with CRUD operations through API endpoints",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mean",
+    "stack",
+    "nodejs",
+    "angularjs",
+    "mongodb",
+    "expressjs"
+  ],
+  "author": "Shrikumar Infotech",
+  "license": "GPLv2.0 or later",
+  "dependencies": {
+    "angular": "^1.8.2",
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.11"
+  }
+}

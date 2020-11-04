@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEAN STACK REST API</title>
+</head>
+<body ng-controller="MainController as vm">
+    <h1>MEAN STACK API user page</h1>
+    <p>Find a user:</p>
+    <div>
+        <form name="viewUser" ng-submit="getUserData()">
+            <div class="form-row">
+                <label for="id"></label>
+                <input ng-model="userid.id" type="text" name="id" id="id" placeholder="Enter User ID" required />
+            </div>
+            <div class="form-row">
+                <input id="view-user-btn" type="submit" name="submit" value="Submit" />
+            </div>
+            <div class="form-row output">
+                <p>Form data: {{ userid }}</p>
+                <p>http status code: {{ status }}</p>
+                <p>http response data: {{ data }}</p>
+            </div>
+        </form>
+    </div>
+
+    <script src="/lib/angular.js"></script>
+    <script src="/assets/javascripts/app.js"></script>
+    <script src="/assets/javascripts/user.js"></script>
+</body>
+</html>
