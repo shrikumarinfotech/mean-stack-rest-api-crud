@@ -1,5 +1,5 @@
 {
-    "username": "nodeapp1",
-    "password": "1234",
-    "collection": "mean-stack"
+    "username": "YOUR-MONGODB-USERNAME",
+    "password": "YOUR-MONGODB-PASSWORD",
+    "collection": "YOUR-MONGODB-COLLECTION"
 }
